@@ -1,0 +1,1 @@
+SELECT name AS cat_name FROM cats;
