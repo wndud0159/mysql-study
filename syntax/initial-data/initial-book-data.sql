@@ -1,3 +1,11 @@
+DROP TABLE books;
+
+DROP DATABASE book_app;
+
+CREATE DATABASE book_app;
+
+USE book_app;
+
 CREATE TABLE books 
 	(
 		book_id INT NOT NULL AUTO_INCREMENT,
@@ -9,6 +17,12 @@ CREATE TABLE books
 		pages INT,
 		PRIMARY KEY(book_id)
 	);
+
+	INSERT INTO books
+    (title, author_fname, author_lname, released_year, stock_quantity, pages)
+    VALUES ('10% Happier', 'Dan', 'Harris', 2014, 29, 256), 
+           ('fake_book', 'Freida', 'Harris', 2001, 287, 428),
+           ('Lincoln In The Bardo', 'George', 'Saunders', 2017, 1000, 367);
 
 INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages)
 VALUES
@@ -28,3 +42,5 @@ VALUES
 ('Cannery Row', 'John', 'Steinbeck', 1945, 95, 181),
 ('Oblivion: Stories', 'David', 'Foster Wallace', 2004, 172, 329),
 ('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
+
+

@@ -1,0 +1,1 @@
+SELECT title FROM books WHERE title NOT LIKE 'W%';
